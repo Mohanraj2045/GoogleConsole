@@ -1,0 +1,11 @@
+{
+  "name": "dummy-netlify-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple multi-page static site for Netlify deployment",
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "smoke": "python3 scripts/smoke_test.py"
+  }
+}
+
