@@ -9,6 +9,7 @@ A small multi-page static website you can deploy directly to Netlify.
 - `services.html`
 - `contact.html`
 - `404.html`
+- `google79c3c0cd98ef7f41.html` (Google Search Console verification file)
 
 ## Project Structure
 
@@ -47,5 +48,8 @@ After deploy, verify these routes:
 - `/about.html`
 - `/services.html`
 - `/contact.html`
+- `/google79c3c0cd98ef7f41.html`
 - Any unknown route should render `404.html`
+
+The verification file is kept at the site root and is also linked in the main navigation for quick access.
 

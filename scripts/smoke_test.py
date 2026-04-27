@@ -5,7 +5,14 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ["index.html", "about.html", "services.html", "contact.html", "404.html"]
+PAGES = [
+    "index.html",
+    "about.html",
+    "services.html",
+    "contact.html",
+    "404.html",
+    "google79c3c0cd98ef7f41.html",
+]
 
 
 def fail(message: str) -> None:
@@ -19,7 +26,12 @@ for page in PAGES:
         fail(f"Missing page: {page}")
 
 content = (ROOT / "index.html").read_text(encoding="utf-8")
-for nav_target in ["about.html", "services.html", "contact.html"]:
+for nav_target in [
+    "about.html",
+    "services.html",
+    "contact.html",
+    "google79c3c0cd98ef7f41.html",
+]:
     if nav_target not in content:
         fail(f"index.html is missing link to {nav_target}")
 
