@@ -10,22 +10,52 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What is my-dummy-site?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is a high-performance site hosted on Netlify used for testing rich results."
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is my-dummy-site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a high-performance site hosted on Netlify used for testing rich results."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Does this site support Rich Cards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, by using JSON-LD structured data, it can appear as a rich result in Google."
+          }
+        }]
+      },
+      {
+        "@type": "Product",
+        "name": "Dummy Test Framework",
+        "image": "https://my-dummy-site.netlify.app/assets/img/icon.png",
+        "description": "A high-speed testing environment for SEO and API performance.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Netlify Demo"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://my-dummy-site.netlify.app",
+          "priceCurrency": "USD",
+          "price": "0.00",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+      {
+        "@type": "VideoObject",
+        "name": "How to use Netlify with GSC API",
+        "description": "A quick walkthrough of connecting your site to Google Search Console.",
+        "thumbnailUrl": "https://my-dummy-site.netlify.app/assets/img/thumb.jpg",
+        "uploadDate": "2026-03-27",
+        "contentUrl": "https://my-dummy-site.netlify.app/video.mp4"
       }
-    }, {
-      "@type": "Question",
-      "name": "Does this site support Rich Cards?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, by using JSON-LD structured data, it can appear as a rich result in Google."
-      }
-    }]
+    ]
   }
   </script>
 </head>
