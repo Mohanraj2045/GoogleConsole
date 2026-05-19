@@ -1,11 +1,12 @@
 const pageMap = {
-  "index.html": "home",
-  "about.html": "about",
-  "services.html": "services",
-  "contact.html": "contact"
+  "": "home",
+  "about": "about",
+  "services": "services",
+  "contact": "contact"
 };
 
-const currentPath = window.location.pathname.split("/").pop() || "index.html";
+const segments = window.location.pathname.replace(/\/$/, "").split("/").filter(Boolean);
+const currentPath = segments.length ? segments[segments.length - 1] : "";
 const currentNav = pageMap[currentPath];
 
 if (currentNav) {
