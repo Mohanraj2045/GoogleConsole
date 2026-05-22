@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /google79c3c0cd98ef7f41.html
 
-Sitemap: https://my-dummy-site.netlify.app/sitemap.xml
+Sitemap: https://search-appearance.netlify.app/sitemap.xml
